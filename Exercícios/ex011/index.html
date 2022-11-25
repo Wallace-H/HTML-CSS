@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto G">
+        </picture>
+    <h1>Reproduzindo Áduio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Gravação.mp3" type="audio/mpeg">
+        <p>Infelismente seu navegador não é compatível com o arquivo. <a href="midia/Gravação.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>
+    </audio>
+    <h1>Vídeos</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" controls poster="imagens/thumb.png">
+        <source src="midia/teste.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h2>Inserindo vídeos do YouTube</h2>
+    <p>Este vídeo está hospedado no YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NqjKpE7bdXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
